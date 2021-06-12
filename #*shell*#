@@ -1,0 +1,582 @@
+student@systems-vm:~> make all
+make: *** No rule to make target 'all'.  Stop.
+student@systemsls
+bin   Desktop    Downloads  Pictures               Public  Templates  ti
+Code  Documents  Music      project-zero-Proveral  temp    testCode   Videos
+student@systems-vm:~> cd project-zero-Proveral/
+student@systems-vm:~/project-zero-Proveral> make
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+draw_shapes.c: In function ‘print_arrow’:
+draw_shapes.c:38:5: error: expected ‘;’ before ‘}’ token
+     }
+     ^
+make: *** [<builtin>: draw_shapes.o] Error 1
+student@systems-vm:~/project-zero-Proveral> make clean
+rm -f *.o asciidraw
+student@systems-vm:~/project-zero-Proveralls
+11x16font.c  8x12-font.c   draw.h         LICENSE   README.md
+5x7-font.c   draw_chars.c  draw_shapes.c  Makefile  uimain.c
+student@systems-vm:~/project-zero-Proveral> make
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+draw_shapes.c: In function ‘print_arrow’:
+draw_shapes.c:38:5: error: expected ‘;’ before ‘}’ token
+     }
+     ^
+make: *** [<builtin>: draw_shapes.o] Error 1
+student@systems-vm:~/project-zero-Proveral> make
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+draw_shapes.c: In function ‘print_arrow’:
+draw_shapes.c:38:5: error: expected ‘;’ before ‘}’ token
+     }
+     ^
+make: *** [<builtin>: draw_shapes.o] Error 1
+student@systems-vm:~/project-zero-Proveral> make
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+draw_shapes.c: In function ‘print_arrow’:
+draw_shapes.c:38:4: error: expected ‘;’ before ‘}’ token
+    }
+    ^
+make: *** [<builtin>: draw_shapes.o] Error 1
+student@systems-vm:~/project-zero-Proveral> make
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+draw_shapes.c: In function ‘print_arrow’:
+draw_shapes.c:39:5: error: expected ‘;’ before ‘}’ token
+     }
+     ^
+make: *** [<builtin>: draw_shapes.o] Error 1
+student@systems-vm:~/project-zero-Proveral> make
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+cc -g -O3    -c -o draw_chars.o draw_chars.c
+cc -g -O3    -c -o 11x16font.o 11x16font.c
+cc -g -O3    -c -o uimain.o uimain.c
+uimain.c: In function ‘main’:
+uimain.c:29:7: warning: implicit declaration of function ‘print_arrow’; did you mean ‘print_square’? [-Wimplicit-function-declaration]
+       print_arrow(5, 5);
+       ^~~~~~~~~~~
+       print_square
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 11x16font.o uimain.o
+student@systems-vm:~/project-zero-Proveral> make
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 11x16font.o uimain.o
+student@systems-vm:~/project-zero-Proveral> ./asciidraw 
+Welcome!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> a
+You selected arrow:
+          *
+         ***
+        *****
+       *******
+      *********
+     ***********
+        *****
+        *****
+        *****
+        *****
+        *****
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> q
+Bye!
+student@systems-vm:~/project-zero-Proveral> git config --global user.name derekaguirre
+student@systems-vm:~/project        *****
+        *****
+        *****
+        *****
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> 
+If '11x16font.c' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf 11x16font.c
+student@systems-vm:~/project-zero-Proveral> If '11x16font.c' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf 11x16font.c
+student@systems-vm:~/project-zero-Proveral> If '11x16font.c' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf 11x16font.c
+student@systems-vm:~/project-zero-Proveral> If '11x16font.c' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf 11x16font.c
+student@systems-vm:~/project-zero-Proveral> bash: syntax error near unexpected token `('
+student@systems-vm:~/project-zero-Proveral> bash: syntax error near unexpected token `newline'
+student@systems-vm:~/project-zero-Prmake
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+cc -g -O3    -c -o draw_chars.o draw_chars.c
+cc -g -O3    -c -o 11x16font.o 11x16font.c
+cc -g -O3    -c -o uimain.o uimain.c
+uimain.c: In function ‘main’:
+uimain.c:36:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+make: *** [<builtin>: uimain.o] Error 1
+student@systems-vm:~/project-zero-Proveral> make
+cc -g -O3    -c -o uimain.o uimain.c
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 11x16font.o uimain.o
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: uimain.o: in function `main':
+/home/student/project-zero-Proveral/uimain.c:35: undefined reference to `print_char_5x7'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /home/student/project-zero-Proveral/uimain.c:35: undefined reference to `print_char_5x7'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /home/student/project-zero-Proveral/uimain.c:35: undefined reference to `print_char_5x7'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:16: asciidraw] Error 1
+student@systems-vm:~/project-zero-Provemake run
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 11x16font.o uimain.o
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: uimain.o: in function `main':
+/home/student/project-zero-Proveral/uimain.c:35: undefined reference to `print_char_5x7'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /home/student/project-zero-Proveral/uimain.c:35: undefined reference to `print_char_5x7'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /home/student/project-zero-Proveral/uimain.c:35: undefined reference to `print_char_5x7'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:16: asciidraw] Error 1
+student@systems-vm:~/project-zero-Promake
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 11x16font.o uimain.o
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: uimain.o: in function `main':
+/home/student/project-zero-Proveral/uimain.c:35: undefined reference to `print_char_5x7'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /home/student/project-zero-Proveral/uimain.c:35: undefined reference to `print_char_5x7'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /home/student/project-zero-Proveral/uimain.c:35: undefined reference to `print_char_5x7'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:16: asciidraw] Error 1
+student@systems-vm:~/project-zero-Proveral> MAKE
+If 'MAKE' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf MAKE
+student@systems-vm:~/project-zero-Proveral> make
+cc -g -O3    -c -o uimain.o uimain.c
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 11x16font.o uimain.o
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: uimain.o: in function `main':
+/home/student/project-zero-Proveral/uimain.c:36: undefined reference to `print_char_5x7'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:16: asciidraw] Error 1
+student@systems-vm:~/project-zero-Proveralmake>
+student@systems-vm:~/project-zero-Proveral>make
+cc -g -O3    -c -o uimain.o uimain.c
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 11x16font.o uimain.o
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: uimain.o: in function `main':
+/home/student/project-zero-Proveral/uimain.c:36: undefined reference to `print_char_5x7'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:16: asciidraw] Error 1
+student@systems-vm:~/project-zero-Proveral> make
+cc -g -O3    -c -o draw_chars.o draw_chars.c
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 11x16font.o uimain.o
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: draw_chars.o: in function `print_char_5x7':
+/home/student/project-zero-Proveral/draw_chars.c:17: undefined reference to `font_5x7'
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: /home/student/project-zero-Proveral/draw_chars.c:17: undefined reference to `font_5x7'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:16: asciidraw] Error 1
+student@systems-vm:~/project-zero-Proveral> ls
+11x16font.c  5x7-font.c   draw_chars.c  draw.h         draw_shapes.o  Makefile   uimain.c
+11x16font.o  8x12-font.c  draw_chars.o  draw_shapes.c  LICENSE        README.md  uimain.o
+student@systems-vm:~/project-zero-Proveral> make
+cc -g -O3    -c -o draw_shapes.o draw_shapes.c
+cc -g -O3    -c -o draw_chars.o draw_chars.c
+cc -g -O3    -c -o uimain.o uimain.c
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 5x7font.o uimain.o
+cc: error: 5x7font.o: No such file or directory
+make: *** [Makefile:17: asciidraw] Error 1
+student@systems-vm:~/project-zero-Proveral> make
+cc -g -O3    -c -o 11x16font.o 11x16font.c
+cc -g -O3    -c -o 5x7-font.o 5x7-font.c
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 11x16font.o uimain.o 5x7-font.o
+student@systems-vm:~/project-zero-Proveral> ./asciidraw 
+Welcome!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> c
+You selected chars:
+  ***           
+  ******        
+     ******     
+     ** ******  
+     **    *****
+     **    *****
+     ** ******  
+     ******     
+  ******        
+  ***           
+                
+  **************
+  **************
+  **    **    **
+  **    **    **
+  **    **    **
+  **    **    **
+  **    ***  ***
+  ***  ******** 
+   ****** ****  
+    ****        
+                
+      ******    
+    **********  
+   ***      *** 
+  ***        ***
+  **          **
+  **          **
+  **          **
+  ***        ***
+   ***      *** 
+    **      **  
+                
+       
+  q     
+       
+       
+       
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+>   q     
+       
+       
+       
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> 
+Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> Bye!
+student@systems-vm:~/project-zero-Proveral> student@systems-vm:~/project-zero-Proveral> student@systems-vm:~/project-zero-Proveral> student@systems-vm:~/project-zero-Proveral> bash: syntax error near unexpected token `('
+student@systems-vm:~/project-zero-Proveral> bash: syntax error near unexpected token `newline'
+student@systems-vm:~/project-zero-Proveral> make
+cc -g -O3    -c -o draw_chars.o draw_chars.c
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 11x16font.o uimain.o 5x7-font.o
+student@systems-vm:~/project-zero-Proveral> ./asciidraw 
+Welcome!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> c
+You selected chars:
+  ***           
+  ******        
+     ******     
+     ** ******  
+     **    *****
+     **    *****
+     ** ******  
+     ******     
+  ******        
+  ***           
+                
+  **************
+  **************
+  **    **    **
+  **    **    **
+  **    **    **
+  **    **    **
+  **    ***  ***
+  ***  ******** 
+   ****** ****  
+    ****        
+                
+      ******    
+    **********  
+   ***      *** 
+  ***        ***
+  **          **
+  **          **
+  **          **
+  ***        ***
+   ***      *** 
+    **      **  
+                
+*******
+*      
+*      
+*      
+*      
+Seqlect which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> Seqlect which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> 
+Unrecognized option 'S', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> Unrecognized option 'e', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> Bye!
+student@systems-vm:~/project-zero-Proveral> bash: syntax error near unexpected token `newline'
+student@systems-vm:~/project-zero-Proveral> make
+cc -g -O3    -c -o uimain.o uimain.c
+cc -o asciidraw -g -O3  draw_shapes.o draw_chars.o 11x16font.o uimain.o 5x7-font.o
+student@systems-vm:~/project-zero-Proveral>./asciidraw 
+Welcome!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> c
+You selected chars:
+  ***           
+  ******        
+     ******     
+     ** ******  
+     **    *****
+     **    *****
+     ** ******  
+     ******     
+  ******        
+  ***           
+                
+  **************
+  **************
+  **    **    **
+  **    **    **
+  **    **    **
+  **    **    **
+  **    ***  ***
+  ***  ******** 
+   ****** ****  
+    ****        
+                
+      ******    
+    **********  
+   ***      *** 
+  ***        ***
+  **          **
+  **          **
+  **          **
+  ***        ***
+   ***      *** 
+    **      **  
+                
+****** 
+  *   *
+  *   *
+  *   *
+****** 
+*******
+*  *  *
+*  *  *
+*  *  *
+ ** ** 
+ ***** 
+*     *
+*     *
+*     *
+ *   * 
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+>clean
+You selected chars:
+  ***           
+  ******        
+     ******     
+     ** ******  
+     **    *****
+     **    *****
+     ** ******  
+     ******     
+  ******        
+  ***           
+                
+  **************
+  **************
+  **    **    **
+  **    **    **
+  **    **    **
+  **    **    **
+  **    ***  ***
+  ***  ******** 
+   ****** ****  
+    ****        
+                
+      ******    
+    **********  
+   ***      *** 
+  ***        ***
+  **          **
+  **          **
+  **          **
+  ***        ***
+   ***      *** 
+    **      **  
+                
+****** 
+  *   *
+  *   *
+  *   *
+****** 
+*******
+*  *  *
+*  *  *
+*  *  *
+ ** ** 
+ ***** 
+*     *
+*     *
+*     *
+ *   * 
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> Unrecognized option 'l', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> Unrecognized option 'e', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> You selected arrow:
+          *
+         ***
+        *****
+       *******
+      *********
+     ***********
+        *****
+        *****
+        *****
+        *****
+        *****
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> Unrecognized option 'n', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> clean
+You selected chars:
+  ***           
+  ******        
+     ******     
+     ** ******  
+     **    *****
+     **    *****
+     ** ******  
+     ******     
+  ******        
+  ***           
+                
+  **************
+  **************
+  **    **    **
+  **    **    **
+  **    **    **
+  **    **    **
+  **    ***  ***
+  ***  ******** 
+   ****** ****  
+    ****        
+                
+      ******    
+    **********  
+   ***      *** 
+  ***        ***
+  **          **
+  **          **
+  **          **
+  ***        ***
+   ***      *** 
+    **      **  
+                
+****** 
+  *   *
+  *   *
+  *   *
+****** 
+*******
+*  *  *
+*  *  *
+*  *  *
+ ** ** 
+ ***** 
+*     *
+*     *
+*     *
+ *   * 
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> Unrecognized option 'l', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> Unrecognized option 'e', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> You selected arrow:
+          *
+         ***
+        *****
+       *******
+      *********
+     ***********
+        *****
+        *****
+        *****
+        *****
+        *****
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> Unrecognized option 'n', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+>make clean
+Unrecognized option 'm', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> You selected arrow:
+          *
+         ***
+        *****
+       *******
+      *********
+     ***********
+        *****
+        *****
+        *****
+        *****
+        *****
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> Unrecognized option 'k', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> Unrecognized option 'e', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> Unrecognized option ' ', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> You selected chars:
+  ***           
+  ******        
+     ******     
+     ** ******  
+     **    *****
+     **    *****
+     ** ******  
+     ******     
+  ******        
+  ***           
+                
+  **************
+  **************
+  **    **    **
+  **    **    **
+  **    **    **
+  **    **    **
+  **    ***  ***
+  ***  ******** 
+   ****** ****  
+    ****        
+                
+      ******    
+    **********  
+   ***      *** 
+  ***        ***
+  **          **
+  **          **
+  **          **
+  ***        ***
+   ***      *** 
+    **      **  
+                
+****** 
+  *   *
+  *   *
+  *   *
+****** 
+*******
+*  *  *
+*  *  *
+*  *  *
+ ** ** 
+ ***** 
+*     *
+*     *
+*     *
+ *   * 
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> Unrecognized option 'l', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> Unrecognized option 'e', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> You selected arrow:
+          *
+         ***
+        *****
+       *******
+      *********
+     ***********
+        *****
+        *****
+        *****
+        *****
+        *****
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quit
+> Unrecognized option 'n', please try again!
+Select which shape you want to print (Triangle = t, Square = s, Arrow = a Chars = c) or 'q' to quiq
+Bye!
+student@systems-vm:~/project-zero-Proveral> make clean
+rm -f *.o asciidraw
+student@systems-vm:~/project-zero-Proveral> git.add *
+If 'git.add' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf git.add
+student@systems-vm:~/project-zero-Proveral> make clean
+rm -f *.o asciidraw
+student@systems-vm:~/project-zero-Proveral> make clean
+rm -f *.o asciidraw
+student@systems-vm:~/project-zero-Proveral> 
