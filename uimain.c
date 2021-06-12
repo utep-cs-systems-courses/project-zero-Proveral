@@ -32,6 +32,8 @@ int main()
       puts("You selected chars:");
       for (char c = 'A'; c < 'D'; c++)
 	print_char_11x16(c);
+      for (char c = 'A'; c < 'D'; c++)
+	print_char_5x7(c);
       break;
     case 'q':
       puts("Bye!");
